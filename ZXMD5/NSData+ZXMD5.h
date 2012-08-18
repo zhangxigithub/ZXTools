@@ -1,14 +1,15 @@
 //
-//  ViewController.h
+//  NSData+ZXMD5.h
 //  ZXTools
 //
 //  Created by 张玺 on 12-8-18.
 //  Copyright (c) 2012年 张玺. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "ZXTools.h"
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface NSData (ZXMD5)
+
+-(NSString *)dataMD5;
 
 @end

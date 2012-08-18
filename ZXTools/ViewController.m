@@ -17,6 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *aim = @"asdwafawe";
+    
+    NSString *encopty = [aim base64EncodedString];
+    
+    NSLog(@"%@",encopty);
+    NSLog(@"%@",[encopty base64DecodedString]);
+    NSLog(@"%@ md5:%@",aim,[aim stringMD5]);
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

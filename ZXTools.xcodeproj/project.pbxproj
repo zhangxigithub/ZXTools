@@ -17,6 +17,11 @@
 		33B890EA15DFB0DC00ACEC58 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B890E815DFB0DB00ACEC58 /* ViewController.xib */; };
 		33B890FE15DFB30100ACEC58 /* ZXRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B890FA15DFB30100ACEC58 /* ZXRate.m */; };
 		33B890FF15DFB30100ACEC58 /* ZXRemoteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B890FD15DFB30100ACEC58 /* ZXRemoteNotification.m */; };
+		33B8910B15DFB96E00ACEC58 /* ZXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8910A15DFB96E00ACEC58 /* ZXTools.m */; };
+		33B8911415DFC03200ACEC58 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911115DFC03200ACEC58 /* NSData+Base64.m */; };
+		33B8911515DFC03200ACEC58 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911315DFC03200ACEC58 /* NSString+Base64.m */; };
+		33B8911915DFC27E00ACEC58 /* NSData+ZXMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911815DFC27E00ACEC58 /* NSData+ZXMD5.m */; };
+		33B8911C15DFC29700ACEC58 /* NSString+ZXMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911B15DFC29700ACEC58 /* NSString+ZXMD5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,16 @@
 		33B890FA15DFB30100ACEC58 /* ZXRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRate.m; sourceTree = "<group>"; };
 		33B890FC15DFB30100ACEC58 /* ZXRemoteNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXRemoteNotification.h; sourceTree = "<group>"; };
 		33B890FD15DFB30100ACEC58 /* ZXRemoteNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRemoteNotification.m; sourceTree = "<group>"; };
+		33B8910915DFB96E00ACEC58 /* ZXTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTools.h; sourceTree = SOURCE_ROOT; };
+		33B8910A15DFB96E00ACEC58 /* ZXTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTools.m; sourceTree = SOURCE_ROOT; };
+		33B8911015DFC03200ACEC58 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		33B8911115DFC03200ACEC58 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		33B8911215DFC03200ACEC58 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		33B8911315DFC03200ACEC58 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		33B8911715DFC27E00ACEC58 /* NSData+ZXMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ZXMD5.h"; path = "ZXMD5/NSData+ZXMD5.h"; sourceTree = SOURCE_ROOT; };
+		33B8911815DFC27E00ACEC58 /* NSData+ZXMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZXMD5.m"; path = "ZXMD5/NSData+ZXMD5.m"; sourceTree = SOURCE_ROOT; };
+		33B8911A15DFC29700ACEC58 /* NSString+ZXMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ZXMD5.h"; path = "ZXMD5/NSString+ZXMD5.h"; sourceTree = SOURCE_ROOT; };
+		33B8911B15DFC29700ACEC58 /* NSString+ZXMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZXMD5.m"; path = "ZXMD5/NSString+ZXMD5.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +100,13 @@
 			children = (
 				33B890E215DFB0DB00ACEC58 /* AppDelegate.h */,
 				33B890E315DFB0DB00ACEC58 /* AppDelegate.m */,
+				33B8910915DFB96E00ACEC58 /* ZXTools.h */,
+				33B8910A15DFB96E00ACEC58 /* ZXTools.m */,
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				33B8911615DFC15800ACEC58 /* ZXMD5 */,
+				33B8910F15DFC03200ACEC58 /* Base64 */,
 				33B890F815DFB30100ACEC58 /* ZXRate */,
 				33B890FB15DFB30100ACEC58 /* ZXRemoteNotification */,
 				33B890DA15DFB0DB00ACEC58 /* Supporting Files */,
@@ -123,6 +142,28 @@
 			);
 			path = ZXRemoteNotification;
 			sourceTree = SOURCE_ROOT;
+		};
+		33B8910F15DFC03200ACEC58 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				33B8911015DFC03200ACEC58 /* NSData+Base64.h */,
+				33B8911115DFC03200ACEC58 /* NSData+Base64.m */,
+				33B8911215DFC03200ACEC58 /* NSString+Base64.h */,
+				33B8911315DFC03200ACEC58 /* NSString+Base64.m */,
+			);
+			path = Base64;
+			sourceTree = SOURCE_ROOT;
+		};
+		33B8911615DFC15800ACEC58 /* ZXMD5 */ = {
+			isa = PBXGroup;
+			children = (
+				33B8911715DFC27E00ACEC58 /* NSData+ZXMD5.h */,
+				33B8911815DFC27E00ACEC58 /* NSData+ZXMD5.m */,
+				33B8911A15DFC29700ACEC58 /* NSString+ZXMD5.h */,
+				33B8911B15DFC29700ACEC58 /* NSString+ZXMD5.m */,
+			);
+			name = ZXMD5;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -192,6 +233,11 @@
 				33B890E715DFB0DB00ACEC58 /* ViewController.m in Sources */,
 				33B890FE15DFB30100ACEC58 /* ZXRate.m in Sources */,
 				33B890FF15DFB30100ACEC58 /* ZXRemoteNotification.m in Sources */,
+				33B8910B15DFB96E00ACEC58 /* ZXTools.m in Sources */,
+				33B8911415DFC03200ACEC58 /* NSData+Base64.m in Sources */,
+				33B8911515DFC03200ACEC58 /* NSString+Base64.m in Sources */,
+				33B8911915DFC27E00ACEC58 /* NSData+ZXMD5.m in Sources */,
+				33B8911C15DFC29700ACEC58 /* NSString+ZXMD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
