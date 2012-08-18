@@ -15,6 +15,8 @@
 		33B890E415DFB0DB00ACEC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B890E315DFB0DB00ACEC58 /* AppDelegate.m */; };
 		33B890E715DFB0DB00ACEC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B890E615DFB0DB00ACEC58 /* ViewController.m */; };
 		33B890EA15DFB0DC00ACEC58 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B890E815DFB0DB00ACEC58 /* ViewController.xib */; };
+		33B890FE15DFB30100ACEC58 /* ZXRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B890FA15DFB30100ACEC58 /* ZXRate.m */; };
+		33B890FF15DFB30100ACEC58 /* ZXRemoteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B890FD15DFB30100ACEC58 /* ZXRemoteNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		33B890E515DFB0DB00ACEC58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33B890E615DFB0DB00ACEC58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33B890E915DFB0DC00ACEC58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		33B890F915DFB30100ACEC58 /* ZXRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXRate.h; sourceTree = "<group>"; };
+		33B890FA15DFB30100ACEC58 /* ZXRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRate.m; sourceTree = "<group>"; };
+		33B890FC15DFB30100ACEC58 /* ZXRemoteNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXRemoteNotification.h; sourceTree = "<group>"; };
+		33B890FD15DFB30100ACEC58 /* ZXRemoteNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRemoteNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				33B890F815DFB30100ACEC58 /* ZXRate */,
+				33B890FB15DFB30100ACEC58 /* ZXRemoteNotification */,
 				33B890DA15DFB0DB00ACEC58 /* Supporting Files */,
 			);
 			path = ZXTools;
@@ -97,6 +105,24 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		33B890F815DFB30100ACEC58 /* ZXRate */ = {
+			isa = PBXGroup;
+			children = (
+				33B890F915DFB30100ACEC58 /* ZXRate.h */,
+				33B890FA15DFB30100ACEC58 /* ZXRate.m */,
+			);
+			path = ZXRate;
+			sourceTree = SOURCE_ROOT;
+		};
+		33B890FB15DFB30100ACEC58 /* ZXRemoteNotification */ = {
+			isa = PBXGroup;
+			children = (
+				33B890FC15DFB30100ACEC58 /* ZXRemoteNotification.h */,
+				33B890FD15DFB30100ACEC58 /* ZXRemoteNotification.m */,
+			);
+			path = ZXRemoteNotification;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -164,6 +190,8 @@
 				33B890E015DFB0DB00ACEC58 /* main.m in Sources */,
 				33B890E415DFB0DB00ACEC58 /* AppDelegate.m in Sources */,
 				33B890E715DFB0DB00ACEC58 /* ViewController.m in Sources */,
+				33B890FE15DFB30100ACEC58 /* ZXRate.m in Sources */,
+				33B890FF15DFB30100ACEC58 /* ZXRemoteNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +307,7 @@
 				33B890EF15DFB0DC00ACEC58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
