@@ -22,6 +22,9 @@
 		33B8911515DFC03200ACEC58 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911315DFC03200ACEC58 /* NSString+Base64.m */; };
 		33B8911915DFC27E00ACEC58 /* NSData+ZXMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911815DFC27E00ACEC58 /* NSData+ZXMD5.m */; };
 		33B8911C15DFC29700ACEC58 /* NSString+ZXMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8911B15DFC29700ACEC58 /* NSString+ZXMD5.m */; };
+		33B8912315DFC61400ACEC58 /* NSString+ZXDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912215DFC61400ACEC58 /* NSString+ZXDES.m */; };
+		33B8912A15DFCF3600ACEC58 /* NSData+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912915DFCF3600ACEC58 /* NSData+ZXAES.m */; };
+		33B8912D15DFD0AF00ACEC58 /* NSString+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,12 @@
 		33B8911815DFC27E00ACEC58 /* NSData+ZXMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZXMD5.m"; path = "ZXMD5/NSData+ZXMD5.m"; sourceTree = SOURCE_ROOT; };
 		33B8911A15DFC29700ACEC58 /* NSString+ZXMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ZXMD5.h"; path = "ZXMD5/NSString+ZXMD5.h"; sourceTree = SOURCE_ROOT; };
 		33B8911B15DFC29700ACEC58 /* NSString+ZXMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZXMD5.m"; path = "ZXMD5/NSString+ZXMD5.m"; sourceTree = SOURCE_ROOT; };
+		33B8912115DFC61400ACEC58 /* NSString+ZXDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ZXDES.h"; path = "../ZXDES/NSString+ZXDES.h"; sourceTree = "<group>"; };
+		33B8912215DFC61400ACEC58 /* NSString+ZXDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZXDES.m"; path = "../ZXDES/NSString+ZXDES.m"; sourceTree = "<group>"; };
+		33B8912815DFCF3600ACEC58 /* NSData+ZXAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ZXAES.h"; path = "../ZXAES/NSData+ZXAES.h"; sourceTree = "<group>"; };
+		33B8912915DFCF3600ACEC58 /* NSData+ZXAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZXAES.m"; path = "../ZXAES/NSData+ZXAES.m"; sourceTree = "<group>"; };
+		33B8912B15DFD0AF00ACEC58 /* NSString+ZXAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXAES.h"; sourceTree = "<group>"; };
+		33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXAES.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,8 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				33B8912615DFCEFA00ACEC58 /* ZXAES */,
+				33B8912515DFC62700ACEC58 /* ZXDES */,
 				33B8911615DFC15800ACEC58 /* ZXMD5 */,
 				33B8910F15DFC03200ACEC58 /* Base64 */,
 				33B890F815DFB30100ACEC58 /* ZXRate */,
@@ -163,6 +174,26 @@
 				33B8911B15DFC29700ACEC58 /* NSString+ZXMD5.m */,
 			);
 			name = ZXMD5;
+			sourceTree = "<group>";
+		};
+		33B8912515DFC62700ACEC58 /* ZXDES */ = {
+			isa = PBXGroup;
+			children = (
+				33B8912115DFC61400ACEC58 /* NSString+ZXDES.h */,
+				33B8912215DFC61400ACEC58 /* NSString+ZXDES.m */,
+			);
+			name = ZXDES;
+			sourceTree = "<group>";
+		};
+		33B8912615DFCEFA00ACEC58 /* ZXAES */ = {
+			isa = PBXGroup;
+			children = (
+				33B8912815DFCF3600ACEC58 /* NSData+ZXAES.h */,
+				33B8912915DFCF3600ACEC58 /* NSData+ZXAES.m */,
+				33B8912B15DFD0AF00ACEC58 /* NSString+ZXAES.h */,
+				33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */,
+			);
+			name = ZXAES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +269,9 @@
 				33B8911515DFC03200ACEC58 /* NSString+Base64.m in Sources */,
 				33B8911915DFC27E00ACEC58 /* NSData+ZXMD5.m in Sources */,
 				33B8911C15DFC29700ACEC58 /* NSString+ZXMD5.m in Sources */,
+				33B8912315DFC61400ACEC58 /* NSString+ZXDES.m in Sources */,
+				33B8912A15DFCF3600ACEC58 /* NSData+ZXAES.m in Sources */,
+				33B8912D15DFD0AF00ACEC58 /* NSString+ZXAES.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

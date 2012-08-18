@@ -15,6 +15,14 @@
 #import "NSString+Base64.h"
 #import "NSData+Base64.h"
 
+#import "NSString+ZXDES.h"
+
+
+#import "NSData+ZXAES.h"
+#import "NSString+ZXAES.h"
+
+
+
 //#import "ZXRemoteNotification.h"
 
 @interface ZXTools : NSObject
