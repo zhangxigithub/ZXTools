@@ -25,6 +25,7 @@
 		33B8912315DFC61400ACEC58 /* NSString+ZXDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912215DFC61400ACEC58 /* NSString+ZXDES.m */; };
 		33B8912A15DFCF3600ACEC58 /* NSData+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912915DFCF3600ACEC58 /* NSData+ZXAES.m */; };
 		33B8912D15DFD0AF00ACEC58 /* NSString+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */; };
+		33B8913615E07D0100ACEC58 /* NSString+ZXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8913515E07D0100ACEC58 /* NSString+ZXTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		33B8912915DFCF3600ACEC58 /* NSData+ZXAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZXAES.m"; path = "../ZXAES/NSData+ZXAES.m"; sourceTree = "<group>"; };
 		33B8912B15DFD0AF00ACEC58 /* NSString+ZXAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXAES.h"; sourceTree = "<group>"; };
 		33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXAES.m"; sourceTree = "<group>"; };
+		33B8913415E07D0100ACEC58 /* NSString+ZXTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXTools.h"; sourceTree = "<group>"; };
+		33B8913515E07D0100ACEC58 /* NSString+ZXTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				33B8913215E07CEE00ACEC58 /* NSStringTools */,
 				33B8912615DFCEFA00ACEC58 /* ZXAES */,
 				33B8912515DFC62700ACEC58 /* ZXDES */,
 				33B8911615DFC15800ACEC58 /* ZXMD5 */,
@@ -196,6 +200,15 @@
 			name = ZXAES;
 			sourceTree = "<group>";
 		};
+		33B8913215E07CEE00ACEC58 /* NSStringTools */ = {
+			isa = PBXGroup;
+			children = (
+				33B8913415E07D0100ACEC58 /* NSString+ZXTools.h */,
+				33B8913515E07D0100ACEC58 /* NSString+ZXTools.m */,
+			);
+			path = NSStringTools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +285,7 @@
 				33B8912315DFC61400ACEC58 /* NSString+ZXDES.m in Sources */,
 				33B8912A15DFCF3600ACEC58 /* NSData+ZXAES.m in Sources */,
 				33B8912D15DFD0AF00ACEC58 /* NSString+ZXAES.m in Sources */,
+				33B8913615E07D0100ACEC58 /* NSString+ZXTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
