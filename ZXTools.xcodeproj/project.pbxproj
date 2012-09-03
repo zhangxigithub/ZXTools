@@ -26,6 +26,12 @@
 		33B8912A15DFCF3600ACEC58 /* NSData+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912915DFCF3600ACEC58 /* NSData+ZXAES.m */; };
 		33B8912D15DFD0AF00ACEC58 /* NSString+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */; };
 		33B8913615E07D0100ACEC58 /* NSString+ZXTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B8913515E07D0100ACEC58 /* NSString+ZXTools.m */; };
+		43162E3315EDB3AF00151BF2 /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43162E3215EDB3AF00151BF2 /* ZXTabBarController.m */; };
+		43162E3615EDB96500151BF2 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3415EDB96500151BF2 /* bg2.png */; };
+		43162E3715EDB96500151BF2 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3515EDB96500151BF2 /* bg1.png */; };
+		4328DACB15EC5531003BC492 /* UIAlertView+ZXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4328DACA15EC5531003BC492 /* UIAlertView+ZXAlertView.m */; };
+		434C394015EDA453009737E9 /* ZXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 434C393F15EDA453009737E9 /* ZXNavigationBar.m */; };
+		434C394215EDA50A009737E9 /* navigationBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 434C394115EDA50A009737E9 /* navigationBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +70,15 @@
 		33B8912C15DFD0AF00ACEC58 /* NSString+ZXAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXAES.m"; sourceTree = "<group>"; };
 		33B8913415E07D0100ACEC58 /* NSString+ZXTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXTools.h"; sourceTree = "<group>"; };
 		33B8913515E07D0100ACEC58 /* NSString+ZXTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXTools.m"; sourceTree = "<group>"; };
+		43162E3115EDB3AF00151BF2 /* ZXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTabBarController.h; sourceTree = "<group>"; };
+		43162E3215EDB3AF00151BF2 /* ZXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBarController.m; sourceTree = "<group>"; };
+		43162E3415EDB96500151BF2 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		43162E3515EDB96500151BF2 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		4328DAC915EC5531003BC492 /* UIAlertView+ZXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ZXAlertView.h"; sourceTree = "<group>"; };
+		4328DACA15EC5531003BC492 /* UIAlertView+ZXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ZXAlertView.m"; sourceTree = "<group>"; };
+		434C393E15EDA453009737E9 /* ZXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNavigationBar.h; sourceTree = "<group>"; };
+		434C393F15EDA453009737E9 /* ZXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNavigationBar.m; sourceTree = "<group>"; };
+		434C394115EDA50A009737E9 /* navigationBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +125,9 @@
 		33B890D915DFB0DB00ACEC58 /* ZXTools */ = {
 			isa = PBXGroup;
 			children = (
+				43162E3415EDB96500151BF2 /* bg2.png */,
+				43162E3515EDB96500151BF2 /* bg1.png */,
+				434C394115EDA50A009737E9 /* navigationBg.png */,
 				33B890E215DFB0DB00ACEC58 /* AppDelegate.h */,
 				33B890E315DFB0DB00ACEC58 /* AppDelegate.m */,
 				33B8910915DFB96E00ACEC58 /* ZXTools.h */,
@@ -117,6 +135,9 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				43162E3015EDB38600151BF2 /* ZXTabBarController */,
+				434C393315EDA3E9009737E9 /* ZXNavigationBar */,
+				4328DAC715EC5513003BC492 /* ZXAlertView */,
 				33B8913215E07CEE00ACEC58 /* NSStringTools */,
 				33B8912615DFCEFA00ACEC58 /* ZXAES */,
 				33B8912515DFC62700ACEC58 /* ZXDES */,
@@ -209,6 +230,33 @@
 			path = NSStringTools;
 			sourceTree = "<group>";
 		};
+		43162E3015EDB38600151BF2 /* ZXTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				43162E3115EDB3AF00151BF2 /* ZXTabBarController.h */,
+				43162E3215EDB3AF00151BF2 /* ZXTabBarController.m */,
+			);
+			path = ZXTabBarController;
+			sourceTree = "<group>";
+		};
+		4328DAC715EC5513003BC492 /* ZXAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				4328DAC915EC5531003BC492 /* UIAlertView+ZXAlertView.h */,
+				4328DACA15EC5531003BC492 /* UIAlertView+ZXAlertView.m */,
+			);
+			path = ZXAlertView;
+			sourceTree = "<group>";
+		};
+		434C393315EDA3E9009737E9 /* ZXNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				434C393E15EDA453009737E9 /* ZXNavigationBar.h */,
+				434C393F15EDA453009737E9 /* ZXNavigationBar.m */,
+			);
+			path = ZXNavigationBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +310,9 @@
 			files = (
 				33B890DE15DFB0DB00ACEC58 /* InfoPlist.strings in Resources */,
 				33B890EA15DFB0DC00ACEC58 /* ViewController.xib in Resources */,
+				434C394215EDA50A009737E9 /* navigationBg.png in Resources */,
+				43162E3615EDB96500151BF2 /* bg2.png in Resources */,
+				43162E3715EDB96500151BF2 /* bg1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +337,9 @@
 				33B8912A15DFCF3600ACEC58 /* NSData+ZXAES.m in Sources */,
 				33B8912D15DFD0AF00ACEC58 /* NSString+ZXAES.m in Sources */,
 				33B8913615E07D0100ACEC58 /* NSString+ZXTools.m in Sources */,
+				4328DACB15EC5531003BC492 /* UIAlertView+ZXAlertView.m in Sources */,
+				434C394015EDA453009737E9 /* ZXNavigationBar.m in Sources */,
+				43162E3315EDB3AF00151BF2 /* ZXTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

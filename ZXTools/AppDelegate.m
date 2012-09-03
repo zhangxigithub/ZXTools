@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "ZXTabBarController.h"
 
 @implementation AppDelegate
 
@@ -17,7 +18,40 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    
+    //UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+//    ZXTabBarController *tab = [[ZXTabBarController alloc] initWithButtonCount:5
+//                                                                       normal:@"bg1"
+//                                                                  andSelected:@"bg2"
+//                                                                    withFrame:CGRectMake(0, 300, 320, 20)];
+    
+    
+
+    ZXTabBarController *tab = [[ZXTabBarController alloc] initWithFrames:@[[NSValue valueWithCGRect:CGRectMake(0, 416, 320/5, 44)],
+                                                                           [NSValue valueWithCGRect:CGRectMake(64, 416, 320/5, 44)],
+                                                                           [NSValue valueWithCGRect:CGRectMake(192, 416, 320/5, 44)],
+                                                                           [NSValue valueWithCGRect:CGRectMake(256, 416, 320/5, 44)]]
+                                                                       normal:@"bg1"
+                                                                  andSelected:@"bg2"];
+    
+
+    tab.viewControllers = @[
+    [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil],
+    [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil],
+    [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil],
+    [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil]
+    ];
+    
+    
+    
+
+    
+
+    self.window.rootViewController = tab;
+    
+    //self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

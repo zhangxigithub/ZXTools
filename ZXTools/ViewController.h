@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ZXTools.h"
+#import "ZXNavigationBar.h"
 
 @interface ViewController : UIViewController
+- (IBAction)push:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lable;
 
 @end

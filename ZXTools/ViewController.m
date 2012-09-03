@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize lable;
 
 - (void)viewDidLoad
 {
@@ -40,11 +41,19 @@
     NSLog(@"%@",[[NSString alloc] initWithData:[[[aim dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptWithKey:key] AES256DecryptWithKey:key] encoding:NSUTF8StringEncoding]);
     
     
+    
+    
+
+
+    //UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    //[self.view addSubview:bar];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
+    [self setLable:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -54,4 +63,8 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)push:(id)sender {
+    ViewController *view = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    [self.navigationController pushViewController:view animated:YES];
+}
 @end
