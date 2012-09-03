@@ -43,6 +43,11 @@
     
     
     
+    ZXSegmentController *controller = [[ZXSegmentController alloc] initWithBgName:@"b"
+                                                                        andTitles:@[@"1",@"2",@"3"]
+                                                                        withFrame:CGRectMake(50, 50, 210, 44)];
+    [self.view addSubview:controller];
+    
 
 
     //UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
