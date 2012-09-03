@@ -44,8 +44,9 @@
     
     
     ZXSegmentController *controller = [[ZXSegmentController alloc] initWithBgName:@"b"
-                                                                        andTitles:@[@"1",@"2",@"3"]
+                                                                        andTitles:@[@"first",@"2",@"3"]
                                                                         withFrame:CGRectMake(50, 50, 210, 44)];
+    controller.delegate = self;
     [self.view addSubview:controller];
     
 
@@ -55,7 +56,10 @@
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
+-(void)segment:(ZXSegmentController *)segment didSelected:(int)index
+{
+    NSLog(@"%d",index);
+}
 - (void)viewDidUnload
 {
     [self setLable:nil];

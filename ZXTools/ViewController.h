@@ -12,7 +12,7 @@
 #import "ZXSegmentController.h"
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ZXSegmentControllerDelegate>
 - (IBAction)push:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *lable;
 

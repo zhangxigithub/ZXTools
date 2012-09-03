@@ -17,6 +17,12 @@
     if (self) {
         
         
+        buttons = [NSMutableArray array];
+        self.titleColorNormal  = [UIColor blackColor];
+        self.titleColorSlected = [UIColor redColor];
+        
+        
+        
         for(int i = 0;i<titles.count;i++)
         {
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -36,24 +42,38 @@
             
             [button setTitle:[titles objectAtIndex:i] forState:UIControlStateNormal];
             
-            [button setTitleColor:[UIColor redColor]   forState:UIControlStateNormal];
-            [button setTitleColor:[UIColor greenColor] forState:UIControlStateHighlighted];
+            
+            [button setTitleColor:self.titleColorNormal  forState:UIControlStateNormal];
+            [button setTitleColor:self.titleColorSlected forState:UIControlStateHighlighted];
+            [button setTitleColor:self.titleColorSlected forState:UIControlStateSelected];
+            
+            
             
             button.frame = CGRectMake(i*frame.size.width/titles.count,
                                       0,
                                       frame.size.width/titles.count,
                                       frame.size.height);
+            [button addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventTouchUpInside];
+            
+            button.tag = i;
+            [buttons addObject:button];
             [self addSubview:button];
-            
-            
         }
-        
-        
-        
-        
-        
-        
-    }
+        [self selectButton:[buttons objectAtIndex:0]];
+}
     return self;
 }
+
+-(void)selectButton:(UIButton*)button
+{
+    for(UIButton *theButton in buttons)
+    {
+        if(button.tag == theButton.tag)
+            button.selected = YES;
+        else theButton.selected = NO;
+    }
+    
+    [self.delegate segment:self didSelected:button.tag];
+}
+
 @end
