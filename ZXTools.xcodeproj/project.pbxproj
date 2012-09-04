@@ -37,6 +37,7 @@
 		430E1EC315F479AF00CD1B47 /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430E1EC215F479AF00CD1B47 /* ZXTabBarController.m */; };
 		43162E3615EDB96500151BF2 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3415EDB96500151BF2 /* bg2.png */; };
 		43162E3715EDB96500151BF2 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3515EDB96500151BF2 /* bg1.png */; };
+		432D59C615F5E9EF00CC49BB /* ZXApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 432D59C515F5E9EF00CC49BB /* ZXApplication.m */; };
 		434C394215EDA50A009737E9 /* navigationBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 434C394115EDA50A009737E9 /* navigationBg.png */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		430E1EC215F479AF00CD1B47 /* ZXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBarController.m; sourceTree = "<group>"; };
 		43162E3415EDB96500151BF2 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		43162E3515EDB96500151BF2 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		432D59C415F5E9EF00CC49BB /* ZXApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXApplication.h; sourceTree = "<group>"; };
+		432D59C515F5E9EF00CC49BB /* ZXApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXApplication.m; sourceTree = "<group>"; };
 		434C394115EDA50A009737E9 /* navigationBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +150,7 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				432D59C315F5E9EF00CC49BB /* ZXApplication */,
 				430E1EBA15F4796400CD1B47 /* ZXAES */,
 				430E1E9A15F478F800CD1B47 /* NSStringTools */,
 				430E1E9D15F478F800CD1B47 /* ZXAlertView */,
@@ -283,6 +287,15 @@
 			path = ZXAES;
 			sourceTree = SOURCE_ROOT;
 		};
+		432D59C315F5E9EF00CC49BB /* ZXApplication */ = {
+			isa = PBXGroup;
+			children = (
+				432D59C415F5E9EF00CC49BB /* ZXApplication.h */,
+				432D59C515F5E9EF00CC49BB /* ZXApplication.m */,
+			);
+			path = ZXApplication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,6 +385,7 @@
 				430E1EBF15F4796400CD1B47 /* NSData+ZXAES.m in Sources */,
 				430E1EC015F4796400CD1B47 /* NSString+ZXAES.m in Sources */,
 				430E1EC315F479AF00CD1B47 /* ZXTabBarController.m in Sources */,
+				432D59C615F5E9EF00CC49BB /* ZXApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

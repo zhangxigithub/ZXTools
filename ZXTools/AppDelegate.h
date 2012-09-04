@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZXApplication.h"
+
 
 @class ViewController;
 
