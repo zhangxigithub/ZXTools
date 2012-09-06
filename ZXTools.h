@@ -21,7 +21,10 @@
 #import "NSData+ZXAES.h"
 #import "NSString+ZXAES.h"
 
+#import "ZXApplication.h"
+#import "ZXSoundEngine.h"
 
+#import "ZXLocationManager.h"
 
 //#import "ZXRemoteNotification.h"
 

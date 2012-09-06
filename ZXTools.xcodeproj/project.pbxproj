@@ -37,7 +37,12 @@
 		430E1EC315F479AF00CD1B47 /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430E1EC215F479AF00CD1B47 /* ZXTabBarController.m */; };
 		43162E3615EDB96500151BF2 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3415EDB96500151BF2 /* bg2.png */; };
 		43162E3715EDB96500151BF2 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3515EDB96500151BF2 /* bg1.png */; };
-		432D59C615F5E9EF00CC49BB /* ZXApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 432D59C515F5E9EF00CC49BB /* ZXApplication.m */; };
+		431A8C0415F71C830004B1CA /* ZXSoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 431A8C0315F71C830004B1CA /* ZXSoundEngine.m */; };
+		431A8C0915F71CA20004B1CA /* ZXApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 431A8C0815F71CA20004B1CA /* ZXApplication.m */; };
+		431A8C0B15F71EBF0004B1CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A8C0A15F71EBF0004B1CA /* AVFoundation.framework */; };
+		431A8C0F15F723C40004B1CA /* ZXLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 431A8C0E15F723C40004B1CA /* ZXLocationManager.m */; };
+		431A8C1115F723D00004B1CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A8C1015F723D00004B1CA /* CoreLocation.framework */; };
+		431A8C1315F723F60004B1CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A8C1215F723F60004B1CA /* MapKit.framework */; };
 		434C394215EDA50A009737E9 /* navigationBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 434C394115EDA50A009737E9 /* navigationBg.png */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +96,15 @@
 		430E1EC215F479AF00CD1B47 /* ZXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBarController.m; sourceTree = "<group>"; };
 		43162E3415EDB96500151BF2 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		43162E3515EDB96500151BF2 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
-		432D59C415F5E9EF00CC49BB /* ZXApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXApplication.h; sourceTree = "<group>"; };
-		432D59C515F5E9EF00CC49BB /* ZXApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXApplication.m; sourceTree = "<group>"; };
+		431A8C0215F71C830004B1CA /* ZXSoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSoundEngine.h; sourceTree = "<group>"; };
+		431A8C0315F71C830004B1CA /* ZXSoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSoundEngine.m; sourceTree = "<group>"; };
+		431A8C0715F71CA20004B1CA /* ZXApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXApplication.h; sourceTree = "<group>"; };
+		431A8C0815F71CA20004B1CA /* ZXApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXApplication.m; sourceTree = "<group>"; };
+		431A8C0A15F71EBF0004B1CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		431A8C0D15F723C40004B1CA /* ZXLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLocationManager.h; sourceTree = "<group>"; };
+		431A8C0E15F723C40004B1CA /* ZXLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLocationManager.m; sourceTree = "<group>"; };
+		431A8C1015F723D00004B1CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		431A8C1215F723F60004B1CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		434C394115EDA50A009737E9 /* navigationBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431A8C1315F723F60004B1CA /* MapKit.framework in Frameworks */,
+				431A8C1115F723D00004B1CA /* CoreLocation.framework in Frameworks */,
+				431A8C0B15F71EBF0004B1CA /* AVFoundation.framework in Frameworks */,
 				33B890D415DFB0DB00ACEC58 /* UIKit.framework in Frameworks */,
 				33B890D615DFB0DB00ACEC58 /* Foundation.framework in Frameworks */,
 				33B890D815DFB0DB00ACEC58 /* CoreGraphics.framework in Frameworks */,
@@ -113,6 +128,9 @@
 		33B890C415DFB0DB00ACEC58 = {
 			isa = PBXGroup;
 			children = (
+				431A8C1215F723F60004B1CA /* MapKit.framework */,
+				431A8C1015F723D00004B1CA /* CoreLocation.framework */,
+				431A8C0A15F71EBF0004B1CA /* AVFoundation.framework */,
 				33B890D915DFB0DB00ACEC58 /* ZXTools */,
 				33B890D215DFB0DB00ACEC58 /* Frameworks */,
 				33B890D015DFB0DB00ACEC58 /* Products */,
@@ -150,7 +168,9 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
-				432D59C315F5E9EF00CC49BB /* ZXApplication */,
+				431A8C0C15F723C40004B1CA /* ZXLocationManager */,
+				431A8C0615F71CA20004B1CA /* ZXApplication */,
+				431A8C0115F71C830004B1CA /* ZXSoundEngine */,
 				430E1EBA15F4796400CD1B47 /* ZXAES */,
 				430E1E9A15F478F800CD1B47 /* NSStringTools */,
 				430E1E9D15F478F800CD1B47 /* ZXAlertView */,
@@ -287,14 +307,32 @@
 			path = ZXAES;
 			sourceTree = SOURCE_ROOT;
 		};
-		432D59C315F5E9EF00CC49BB /* ZXApplication */ = {
+		431A8C0115F71C830004B1CA /* ZXSoundEngine */ = {
 			isa = PBXGroup;
 			children = (
-				432D59C415F5E9EF00CC49BB /* ZXApplication.h */,
-				432D59C515F5E9EF00CC49BB /* ZXApplication.m */,
+				431A8C0215F71C830004B1CA /* ZXSoundEngine.h */,
+				431A8C0315F71C830004B1CA /* ZXSoundEngine.m */,
+			);
+			path = ZXSoundEngine;
+			sourceTree = SOURCE_ROOT;
+		};
+		431A8C0615F71CA20004B1CA /* ZXApplication */ = {
+			isa = PBXGroup;
+			children = (
+				431A8C0715F71CA20004B1CA /* ZXApplication.h */,
+				431A8C0815F71CA20004B1CA /* ZXApplication.m */,
 			);
 			path = ZXApplication;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
+		};
+		431A8C0C15F723C40004B1CA /* ZXLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				431A8C0D15F723C40004B1CA /* ZXLocationManager.h */,
+				431A8C0E15F723C40004B1CA /* ZXLocationManager.m */,
+			);
+			path = ZXLocationManager;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -385,7 +423,9 @@
 				430E1EBF15F4796400CD1B47 /* NSData+ZXAES.m in Sources */,
 				430E1EC015F4796400CD1B47 /* NSString+ZXAES.m in Sources */,
 				430E1EC315F479AF00CD1B47 /* ZXTabBarController.m in Sources */,
-				432D59C615F5E9EF00CC49BB /* ZXApplication.m in Sources */,
+				431A8C0415F71C830004B1CA /* ZXSoundEngine.m in Sources */,
+				431A8C0915F71CA20004B1CA /* ZXApplication.m in Sources */,
+				431A8C0F15F723C40004B1CA /* ZXLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +506,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZXTools/ZXTools-Prefix.pch";
 				INFOPLIST_FILE = "ZXTools/ZXTools-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -477,6 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZXTools/ZXTools-Prefix.pch";
 				INFOPLIST_FILE = "ZXTools/ZXTools-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -13,10 +13,25 @@
 
 @implementation AppDelegate
 
+
+
+-(void)didReceivePlacemark:(MKPlacemark *)mark
+{
+    NSLog(@"mark:%@",mark);
+}
+-(void)didReceiveCoordinateInfo:(CLLocation *)info
+{
+    NSLog(@"info:%@",info);
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [ZXApplication showInfo];
+
+    location = [[ZXLocationManager alloc] init];
+    location.delegate = self;
+    [location locationInfoWithPlacemark:YES];
     
-    NSLog(@"%@",[ZXApplication documentPath]);
+    
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

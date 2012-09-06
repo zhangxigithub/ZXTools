@@ -46,6 +46,8 @@
     ZXSegmentController *controller = [[ZXSegmentController alloc] initWithBgName:@"b"
                                                                         andTitles:@[@"first",@"2",@"3"]
                                                                         withFrame:CGRectMake(50, 50, 210, 44)];
+    
+    controller.titleColorNormal = [UIColor orangeColor];
     controller.delegate = self;
     [self.view addSubview:controller];
     

@@ -75,5 +75,22 @@
     
     [self.delegate segment:self didSelected:button.tag];
 }
+-(void)setTitleColorNormal:(UIColor *)titleColorNormal
+{
+    _titleColorNormal = titleColorNormal;
+    [self setTitleColor:titleColorNormal toState:UIControlStateNormal];
+}
+-(void)setTitleColorSlected:(UIColor *)titleColorSlected
+{
+    _titleColorSlected = titleColorSlected;
+    [self setTitleColor:titleColorSlected toState:UIControlStateSelected];
+}
+-(void)setTitleColor:(UIColor *)color toState:(UIControlState)state
+{
+    for(UIButton *theButton in buttons)
+    {
+        [theButton setTitleColor:color forState:state];
+    }
+}
 
 @end

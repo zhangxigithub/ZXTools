@@ -10,4 +10,16 @@
 
 @interface ZXApplication : NSObject
 
+
++(NSString *)documentPath;
++(NSString *)appVersion;
++(BOOL)isJailBreak;
++(float)iOSVersion;     //返回iOS版本号，整形，例如 3,4,5
++(BOOL)isIpad;
++(NSString *)language;
+
+
+
+
++(void)showInfo;
 @end

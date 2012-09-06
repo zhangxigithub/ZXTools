@@ -10,4 +10,55 @@
 
 @implementation ZXApplication
 
++(NSString *)documentPath
+{
+    return [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+}
++(NSString *)appVersion
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+}
+
++(BOOL)isJailBreak
+{
+    int res = system("ls");
+    if (res == 0)
+        return YES;
+    else
+        return NO;
+}
++(float)iOSVersion
+{
+    return [[[UIDevice currentDevice] systemVersion] floatValue];
+}
++(BOOL)isIpad
+{
+    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+}
+
++(NSString *)language
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
+    return [languages objectAtIndex:0];
+}
+
+
++(void)showInfo
+{
+    #ifdef DEBUG
+    #else
+        return;
+    #endif
+    
+    
+    NSLog(@"document:%@",[ZXApplication documentPath]);
+    NSLog(@"%@",[ZXApplication isJailBreak]?@"越狱":@"没越狱");
+    NSLog(@"app version:%@",[ZXApplication appVersion]);
+    NSLog(@"iOS version:%f",[ZXApplication iOSVersion]);
+    NSLog(@"is iPad : %@",[ZXApplication isIpad]?@"yes":@"no");
+    NSLog(@"language : %@",[ZXApplication language]);
+    
+    NSLog(@"****************************************");
+}
 @end

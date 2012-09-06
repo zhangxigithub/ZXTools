@@ -14,6 +14,6 @@
 
 @interface ViewController : UIViewController<ZXSegmentControllerDelegate>
 - (IBAction)push:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *lable;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *lable;
 
 @end
