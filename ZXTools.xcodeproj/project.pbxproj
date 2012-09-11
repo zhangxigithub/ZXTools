@@ -44,6 +44,8 @@
 		431A8C1115F723D00004B1CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A8C1015F723D00004B1CA /* CoreLocation.framework */; };
 		431A8C1315F723F60004B1CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A8C1215F723F60004B1CA /* MapKit.framework */; };
 		434C394215EDA50A009737E9 /* navigationBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 434C394115EDA50A009737E9 /* navigationBg.png */; };
+		43927BD115FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 43927BD015FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		43927BD415FF0B7A0087F249 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43927BD315FF0B7A0087F249 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,9 @@
 		431A8C1015F723D00004B1CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		431A8C1215F723F60004B1CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		434C394115EDA50A009737E9 /* navigationBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBg.png; sourceTree = "<group>"; };
+		43927BCF15FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		43927BD015FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		43927BD315FF0B7A0087F249 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43927BD415FF0B7A0087F249 /* AssetsLibrary.framework in Frameworks */,
 				431A8C1315F723F60004B1CA /* MapKit.framework in Frameworks */,
 				431A8C1115F723D00004B1CA /* CoreLocation.framework in Frameworks */,
 				431A8C0B15F71EBF0004B1CA /* AVFoundation.framework in Frameworks */,
@@ -128,6 +134,7 @@
 		33B890C415DFB0DB00ACEC58 = {
 			isa = PBXGroup;
 			children = (
+				43927BD315FF0B7A0087F249 /* AssetsLibrary.framework */,
 				431A8C1215F723F60004B1CA /* MapKit.framework */,
 				431A8C1015F723D00004B1CA /* CoreLocation.framework */,
 				431A8C0A15F71EBF0004B1CA /* AVFoundation.framework */,
@@ -168,6 +175,7 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				43927BCE15FF0B5F0087F249 /* ZXALAssetsLibrary */,
 				431A8C0C15F723C40004B1CA /* ZXLocationManager */,
 				431A8C0615F71CA20004B1CA /* ZXApplication */,
 				431A8C0115F71C830004B1CA /* ZXSoundEngine */,
@@ -334,6 +342,15 @@
 			path = ZXLocationManager;
 			sourceTree = SOURCE_ROOT;
 		};
+		43927BCE15FF0B5F0087F249 /* ZXALAssetsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				43927BCF15FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				43927BD015FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m */,
+			);
+			path = ZXALAssetsLibrary;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +443,7 @@
 				431A8C0415F71C830004B1CA /* ZXSoundEngine.m in Sources */,
 				431A8C0915F71CA20004B1CA /* ZXApplication.m in Sources */,
 				431A8C0F15F723C40004B1CA /* ZXLocationManager.m in Sources */,
+				43927BD115FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

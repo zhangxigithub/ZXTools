@@ -32,8 +32,8 @@
     
     
     NSLog(@">>>>>>>>>>>>>>>>>");
-    //NSLog(@"%@",[aim AES256EncryptWithKey:key]);
-    //NSLog(@"%@",[[aim AES256EncryptWithKey:key] AES256DecryptWithKey:key]);
+    NSLog(@"%@",[aim AES256EncryptWithKey:key]);
+    NSLog(@"%@",[[aim AES256EncryptWithKey:key] AES256DecryptWithKey:key]);
     
     NSLog(@"aa:%@",[[NSString alloc] initWithData:[[aim dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptWithKey:key] encoding:NSUTF8StringEncoding]);
     
