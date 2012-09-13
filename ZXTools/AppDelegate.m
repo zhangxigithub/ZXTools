@@ -15,22 +15,20 @@
 
 
 
--(void)didReceivePlacemark:(MKPlacemark *)mark
-{
-    NSLog(@"mark:%@",mark);
-}
--(void)didReceiveCoordinateInfo:(CLLocation *)info
-{
-    NSLog(@"info:%@",info);
-}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{    
     [ZXApplication showInfo];
 
     location = [[ZXLocationManager alloc] init];
-    location.delegate = self;
     [location locationInfoWithPlacemark:YES];
     
+    [location locate:^(CLLocation *locationInfo) {
+        NSLog(@"llll:%@",locationInfo);
+    } mark:^(MKPlacemark *placemark) {
+        NSLog(@"pppp:%@",placemark);
+    }];
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -29,7 +29,7 @@
 
 @property(nonatomic,unsafe_unretained) id<ZXLocationManagerDelegate> delegate;
 
--(void)locate:(void (^)(CLLocation *))locationInfo mark:(void (^)(MKPlacemark *))mark;
+-(void)locate:(void (^)(CLLocation *locationInfo))info mark:(void(^)(MKPlacemark *placemark))mark;
 
 
 -(void)locationInfoWithPlacemark:(BOOL)placemark;

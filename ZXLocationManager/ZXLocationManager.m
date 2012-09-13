@@ -23,7 +23,7 @@
     
     [locationManager startUpdatingLocation];
 }
--(void)locate:(void (^)(CLLocation *))info mark:(void (^)(MKPlacemark *))mark
+-(void)locate:(void (^)(CLLocation *locationInfo))info mark:(void(^)(MKPlacemark *placemark))mark
 {
     locationInfo = info;
     placeMark = mark;
@@ -41,12 +41,14 @@
 	didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
-
+    
     id obj = self.delegate;
     if([obj respondsToSelector:@selector(didReceiveCoordinateInfo:)])
     {
         [obj didReceiveCoordinateInfo:newLocation];
     }
+    if(locationInfo != nil)
+        locationInfo(newLocation);
     
     CLLocationCoordinate2D loc = newLocation.coordinate;
     
@@ -64,17 +66,16 @@
         [geocoder reverseGeocodeLocation:location
                        completionHandler:^(NSArray *placemarks, NSError *error) {
                            
-                           
-                           id obj = self.delegate;
-                           if([obj respondsToSelector:@selector(didReceivePlacemark:)])
+                           CLPlacemark *mark = [placemarks objectAtIndex:0];
+                           if(placemarks.count >0)
                            {
-                               if(placemarks.count >0)
+                               id obj = self.delegate;
+                               if([obj respondsToSelector:@selector(didReceivePlacemark:)])
                                {
-                                   CLPlacemark *mark = [placemarks objectAtIndex:0];
                                    [obj didReceivePlacemark:[[MKPlacemark alloc] initWithPlacemark:mark]];
-                                   placeMark([[MKPlacemark alloc] initWithPlacemark:mark]);
                                }
-                               
+                               if(placeMark != nil)
+                                   placeMark([[MKPlacemark alloc] initWithPlacemark:mark]);
                            }
                        }];
         
