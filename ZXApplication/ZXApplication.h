@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#include <sys/sysctl.h>
 @interface ZXApplication : NSObject
 
 
@@ -16,6 +16,7 @@
 +(BOOL)isJailBreak;
 +(float)iOSVersion;     //返回iOS版本号，整形，例如 3,4,5
 +(BOOL)isIpad;
++(NSString *)platform;
 +(NSString *)language;
 
 

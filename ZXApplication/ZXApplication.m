@@ -42,6 +42,22 @@
     NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
     return [languages objectAtIndex:0];
 }
++(NSString *)platform{
+    
+    size_t size;
+    
+    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+    
+    char *machine = malloc(size);
+    
+    sysctlbyname("hw.machine", machine, &size, NULL, 0);
+    
+    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
+    
+    free(machine);
+    
+    return platform;
+}
 
 
 +(void)showInfo
@@ -58,6 +74,7 @@
     NSLog(@"iOS version:%f",[ZXApplication iOSVersion]);
     NSLog(@"is iPad : %@",[ZXApplication isIpad]?@"yes":@"no");
     NSLog(@"language : %@",[ZXApplication language]);
+    NSLog(@"platform : %@",[ZXApplication platform]);
     
     NSLog(@"****************************************");
 }
