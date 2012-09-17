@@ -16,6 +16,7 @@
 +(BOOL)isJailBreak;
 +(float)iOSVersion;     //返回iOS版本号，整形，例如 3,4,5
 +(BOOL)isIpad;
++(BOOL)isIPhone5;
 +(NSString *)platform;
 +(NSString *)language;
 

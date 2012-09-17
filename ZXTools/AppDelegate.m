@@ -18,7 +18,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
+{
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     [ZXApplication showInfo];
 
     location = [[ZXLocationManager alloc] init];

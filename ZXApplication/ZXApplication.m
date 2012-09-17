@@ -42,6 +42,17 @@
     NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
     return [languages objectAtIndex:0];
 }
++(BOOL)isIPhone5
+{
+    if([ZXApplication isIpad]) return NO;
+    
+    NSString *platform = [ZXApplication platform];
+    
+    if([platform compare:@"iPhone5,1"]== NSOrderedSame ||
+       [platform compare:@"iPhone5,1"]== NSOrderedDescending )
+        return YES;
+    return NO;
+}
 +(NSString *)platform{
     
     size_t size;
@@ -75,6 +86,7 @@
     NSLog(@"is iPad : %@",[ZXApplication isIpad]?@"yes":@"no");
     NSLog(@"language : %@",[ZXApplication language]);
     NSLog(@"platform : %@",[ZXApplication platform]);
+    NSLog(@"is Iphone5 : %@",[ZXApplication isIPhone5]?@"yes":@"no");
     
     NSLog(@"****************************************");
 }
