@@ -113,6 +113,7 @@
 		43927BCF15FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		43927BD015FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		43927BD315FF0B7A0087F249 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		43FB36961608266B0024F12A /* ZXConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXConfig.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +168,7 @@
 		33B890D915DFB0DB00ACEC58 /* ZXTools */ = {
 			isa = PBXGroup;
 			children = (
+				43FB36961608266B0024F12A /* ZXConfig.h */,
 				43162E3415EDB96500151BF2 /* bg2.png */,
 				43162E3515EDB96500151BF2 /* bg1.png */,
 				434C394115EDA50A009737E9 /* navigationBg.png */,

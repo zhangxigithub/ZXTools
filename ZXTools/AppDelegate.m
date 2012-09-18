@@ -14,34 +14,38 @@
 @implementation AppDelegate
 
 
-
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //BACK(NSLog(@"r"))
+    
+    void (^sayHello)() = ^{ NSLog(@"hello");};
+    
+    BACK(sayHello);
+    MAIN(^{NSLog(@"main queue");});
     
     
+    NSLog(@"%f",[[[UIScreen mainScreen]currentMode]size].width);
+    NSLog(@"%f",[[[UIScreen mainScreen]currentMode]size].height);
     
+    if(iPhone5)
+    {
+        NSLog(@"iphone 5");
+    }
+    if(isRetina)
+    {
+        NSLog(@"retina\nretina\nretina\nretina\nretina\nretina\nretina\nretina\n");
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     [ZXApplication showInfo];
 
     location = [[ZXLocationManager alloc] init];
     [location locationInfoWithPlacemark:YES];
     
     [location locate:^(CLLocation *locationInfo) {
-        NSLog(@"llll:%@",locationInfo);
+        NSLog(@"location : %@ \n",locationInfo);
     } mark:^(MKPlacemark *placemark) {
-        NSLog(@"pppp:%@",placemark);
+        NSLog(@"placemark : %@ \n",placemark);
     }];
     
     
