@@ -19,7 +19,7 @@
 +(BOOL)isIPhone5;
 +(NSString *)platform;
 +(NSString *)language;
-
++(void)rate:(NSString *)app;
 
 
 
