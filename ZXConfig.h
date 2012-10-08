@@ -17,7 +17,8 @@
 
 
 
-
+//App
+#define kApp (AppDelegate *)[UIApplication sharedApplication].delegate
 
 
 //URL
