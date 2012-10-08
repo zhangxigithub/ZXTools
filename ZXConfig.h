@@ -1,5 +1,22 @@
 //项目的基本配置
 //在xxxx-Profix.pch中引用
+#ifdef DEBUG
+
+#else
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -10,7 +27,7 @@
 
 //color
 #define kColor_Red [UIColor redColor]
-
+#define kColor_Text [UIColor colorWithRed:0.776 green:0.447 blue:0.262 alpha:1]
 
 
 
@@ -18,6 +35,19 @@
 #define kFrame_Zero CGRectMake(0, 0, 0, 0)
 
 
+
+
+//frame
+#define kFrame_Zero CGRectMake(0, 0, 0, 0)
+
+#define kScreen_Height ([[UIScreen mainScreen] currentMode].size.height/[[UIScreen mainScreen] scale])
+#define kScreen_Width  ([[UIScreen mainScreen] currentMode].size.width/[[UIScreen mainScreen] scale])
+#define kScreen_Frame (CGRectMake(0, 0 ,kScreen_Width,kScreen_Height))
+
+
+#define kContent_Height ([[UIScreen mainScreen] currentMode].size.height/[[UIScreen mainScreen] scale] - 20)
+#define kContent_Width  ([[UIScreen mainScreen] currentMode].size.width/[[UIScreen mainScreen] scale])
+#define kContent_Frame (CGRectMake(0, 0 ,kContent_Width,kContent_Height))
 
 
 
@@ -42,9 +72,7 @@
 
 //Device
 #define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
-
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
-
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 //区分模拟器和真机
