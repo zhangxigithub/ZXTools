@@ -1,46 +1,44 @@
 //项目的基本配置
 //在xxxx-Profix.pch中引用
+
+
 #ifdef DEBUG
 
 #else
 
 #endif
 
+//URL
+#define kURL_Localhost [NSURL URLWithString:@"127.0.0.1"]
+
+
+//color
+
+//point
+
+//frame
 
 
 
 
 
 
+//****************************  项目相关 ↑ ***************************************
 
-
-
+//****************************  工具相关 ↓ ***************************************
 
 
 //App
 #define kApp (AppDelegate *)[UIApplication sharedApplication].delegate
 
 
-//URL
-#define kURL_Localhost [NSURL URLWithString:@"127.0.0.1"]
-
-
-
 //color
 #define RGB(r, g, b)             [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
 #define RGBAlpha(r, g, b, a)     [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
 
-#define kColor_Red  [UIColor redColor]
-#define kColor_Text [UIColor colorWithRed:0.776 green:0.447 blue:0.262 alpha:1]
-
-//point
-
 
 
 //frame
-#define kFrame_Zero CGRectMake(0, 0, 0, 0)
-
-
 #define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
 #define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)
 #define kScreen_Frame    (CGRectMake(0, 0 ,kScreen_Width,kScreen_Height))
