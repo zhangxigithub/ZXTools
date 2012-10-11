@@ -77,7 +77,7 @@
         if([view isKindOfClass:[UITabBar class]] == NO &&
            [view isKindOfClass:[UIButton class]] == NO)
         {
-            view.frame = CGRectMake(0, 0, 320, 460);
+            view.frame = CGRectMake(0, 0, 320, kScreen_Height);
         }
         
     }

@@ -18,6 +18,14 @@
 {
     //BACK(NSLog(@"r"))
     
+    //tel(@"15810739215");
+
+    
+
+    
+    NSLog(@"%@",[[NSBundle mainBundle] bundleIdentifier]);
+   
+    
     void (^sayHello)() = ^{ NSLog(@"hello");};
     
     BACK(sayHello);
@@ -63,10 +71,10 @@
     
     
 
-    ZXTabBarController *tab = [[ZXTabBarController alloc] initWithFrames:@[[NSValue valueWithCGRect:CGRectMake(0, 416, 320/5, 44)],
-                                                                           [NSValue valueWithCGRect:CGRectMake(64, 416, 320/5, 44)],
-                                                                           [NSValue valueWithCGRect:CGRectMake(192, 416, 320/5, 44)],
-                                                                           [NSValue valueWithCGRect:CGRectMake(256, 416, 320/5, 44)]]
+    ZXTabBarController *tab = [[ZXTabBarController alloc] initWithFrames:@[[NSValue valueWithCGRect:CGRectMake(0, 116, 320/5, 44)],
+                                                                           [NSValue valueWithCGRect:CGRectMake(64, 116, 320/5, 44)],
+                                                                           [NSValue valueWithCGRect:CGRectMake(192, 116, 320/5, 44)],
+                                                                           [NSValue valueWithCGRect:CGRectMake(256, 116, 320/5, 44)]]
                                                                        normal:@"bg1"
                                                                   andSelected:@"bg2"];
     
@@ -80,6 +88,10 @@
     
     
     
+    
+//    NSLog(@"%@",canTel?@"can":@"can't");
+    //NSLog(@"%@",canOpenApp(@"mailto:")?@"can":@"can't");
+    //openApp(@"mailto:zhangxi@kuxun.com");
 
     
 
