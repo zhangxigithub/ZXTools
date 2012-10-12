@@ -68,47 +68,46 @@
     
     
     UIView *view1  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view1.backgroundColor = kColor_Red;
+    view1.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view1];
     view1.center = kP1;
     
     UIView *view2  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view2.backgroundColor = kColor_Red;
+    view2.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view2];
     view2.center = kP2;
     
     UIView *view3  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view3.backgroundColor = kColor_Red;
+    view3.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view3];
     view3.center = kP3;
     
     UIView *view4  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view4.backgroundColor = kColor_Red;
+    view4.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view4];
     view4.center = kP4;
     
     UIView *view5  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view5.backgroundColor = kColor_Red;
-    [self.view addSubview:view5];
+    view5.backgroundColor = RGB(250, 0, 0);    [self.view addSubview:view5];
     view5.center = kP5;
     
     UIView *view6  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view6.backgroundColor = kColor_Red;
+    view6.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view6];
     view6.center = kP6;
     
     UIView *view7  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view7.backgroundColor = kColor_Red;
+    view7.backgroundColor =RGB(250, 0, 0);
     [self.view addSubview:view7];
     view7.center = kP7;
     
     UIView *view8  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
-    view8.backgroundColor = kColor_Red;
+    view8.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view8];
     view8.center = kP8;
     
     UIView *view9  = [[UIView alloc] initWithFrame:CGRectMake(0,0, 10, 10)];
-    view9.backgroundColor = kColor_Red;
+    view9.backgroundColor = RGB(250, 0, 0);
     [self.view addSubview:view9];
     view9.center = kP9;
     

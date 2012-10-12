@@ -19,7 +19,7 @@
         
         buttons = [NSMutableArray array];
         self.titleColorNormal  = [UIColor blackColor];
-        self.titleColorSlected = [UIColor redColor];
+        self.titleColorSlected = [UIColor whiteColor];
         
         
         
@@ -47,7 +47,7 @@
             [button setTitleColor:self.titleColorSlected forState:UIControlStateHighlighted];
             [button setTitleColor:self.titleColorSlected forState:UIControlStateSelected];
             
-            
+            [button.titleLabel setFont:[UIFont systemFontOfSize:14]];
             
             button.frame = CGRectMake(i*frame.size.width/titles.count,
                                       0,
@@ -75,6 +75,11 @@
     
     [self.delegate segment:self didSelected:button.tag];
 }
+-(void)setSelectedIndex:(int)index
+{
+    UIButton *button = [buttons objectAtIndex:index];
+    [self selectButton:button];
+}
 -(void)setTitleColorNormal:(UIColor *)titleColorNormal
 {
     _titleColorNormal = titleColorNormal;
@@ -93,4 +98,11 @@
     }
 }
 
+-(void)setFont:(UIFont *)font
+{
+    for(UIButton *theButton in buttons)
+    {
+        [theButton.titleLabel setFont:font];
+    }
+}
 @end

@@ -23,10 +23,14 @@
     NSMutableArray *buttons;
 }
 @property(nonatomic,unsafe_unretained) id<ZXSegmentControllerDelegate> delegate;
+
 @property(nonatomic,strong) UIColor *titleColorNormal;
 @property(nonatomic,strong) UIColor *titleColorSlected;
 
+-(void)setFont:(UIFont *)font;
 
+
+-(void)setSelectedIndex:(int)index;
 -(id)initWithBgName:(NSString *)name andTitles:(NSArray *)titles withFrame:(CGRect)frame;
 
 @end
