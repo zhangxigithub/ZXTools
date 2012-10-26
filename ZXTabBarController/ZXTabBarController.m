@@ -28,6 +28,45 @@
     }
     return self;
 }
+-(id)initWithItems:(NSArray *)items
+{
+    self = [super init];
+    if(self)
+    {
+        buttons = [NSMutableArray array];
+        [self hideRealTabBar];
+        int i  = 0;
+        for(NSDictionary *value in items)
+        {
+            
+            CGRect buttonFrame = [[value objectForKey:kTabItemFrame] CGRectValue];
+            UIButton *button =[UIButton buttonWithType:UIButtonTypeCustom] ;
+            button.tag = i;
+            button.frame = buttonFrame;
+            
+            [self.view addSubview:button];
+            
+            [button setImage:[UIImage imageNamed:[value objectForKey:kTabItemNormal]]
+                    forState:UIControlStateNormal];
+            
+            [button setImage:[UIImage imageNamed:[value objectForKey:kTabItemSelected]]
+                    forState:UIControlStateSelected];
+            
+            [button addTarget:self
+                       action:@selector(selectItem:)
+             forControlEvents:UIControlEventTouchUpInside];
+            [buttons addObject:button];
+            i++;
+        }
+        
+        UIButton *button = [buttons objectAtIndex:0];
+        button.selected = YES;
+    }
+    return self;
+}
+
+
+
 -(id)initWithFrames:(NSArray *)frames
              normal:(NSString *)normalButton
         andSelected:(NSString *)selectedButton
@@ -135,5 +174,13 @@
     self.selectedIndex = button.tag;
 }
 
++(NSDictionary *)itemWithFrame:(CGRect)frame normalStatus:(NSString *)normal selectedStatus:(NSString *)selected
+{
+    return @{
+kTabItemFrame:[NSValue valueWithCGRect:frame],
+kTabItemNormal:normal,
+kTabItemSelected:selected
+    };
+}
 
 @end
