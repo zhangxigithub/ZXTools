@@ -93,6 +93,10 @@
 #define canOpenApp(appScheme) ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appScheme]])
 #define openApp(appScheme) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]])
 
+
+//#define POImage(image)
+
+
 //区分模拟器和真机
 
 #if TARGET_OS_IPHONE
