@@ -35,6 +35,7 @@
 		430E1EBF15F4796400CD1B47 /* NSData+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 430E1EBC15F4796400CD1B47 /* NSData+ZXAES.m */; };
 		430E1EC015F4796400CD1B47 /* NSString+ZXAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 430E1EBE15F4796400CD1B47 /* NSString+ZXAES.m */; };
 		430E1EC315F479AF00CD1B47 /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430E1EC215F479AF00CD1B47 /* ZXTabBarController.m */; };
+		43151E23171D1F5200F3DD51 /* NSDate+ZXDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43151E22171D1F5200F3DD51 /* NSDate+ZXDate.m */; };
 		43162E3615EDB96500151BF2 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3415EDB96500151BF2 /* bg2.png */; };
 		43162E3715EDB96500151BF2 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43162E3515EDB96500151BF2 /* bg1.png */; };
 		431A8C0415F71C830004B1CA /* ZXSoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 431A8C0315F71C830004B1CA /* ZXSoundEngine.m */; };
@@ -100,6 +101,8 @@
 		430E1EBE15F4796400CD1B47 /* NSString+ZXAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXAES.m"; sourceTree = "<group>"; };
 		430E1EC115F479AF00CD1B47 /* ZXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTabBarController.h; sourceTree = "<group>"; };
 		430E1EC215F479AF00CD1B47 /* ZXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBarController.m; sourceTree = "<group>"; };
+		43151E21171D1F5200F3DD51 /* NSDate+ZXDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZXDate.h"; sourceTree = "<group>"; };
+		43151E22171D1F5200F3DD51 /* NSDate+ZXDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZXDate.m"; sourceTree = "<group>"; };
 		43162E3415EDB96500151BF2 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
 		43162E3515EDB96500151BF2 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		431A8C0215F71C830004B1CA /* ZXSoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSoundEngine.h; sourceTree = "<group>"; };
@@ -188,6 +191,7 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				43151E1F171D1F1400F3DD51 /* ZXDate */,
 				435B28301666F93600133A3A /* ZXTableView */,
 				434145E71643631500CA5861 /* ZXDebug */,
 				43927BCE15FF0B5F0087F249 /* ZXALAssetsLibrary */,
@@ -322,6 +326,15 @@
 			);
 			path = ZXAES;
 			sourceTree = SOURCE_ROOT;
+		};
+		43151E1F171D1F1400F3DD51 /* ZXDate */ = {
+			isa = PBXGroup;
+			children = (
+				43151E21171D1F5200F3DD51 /* NSDate+ZXDate.h */,
+				43151E22171D1F5200F3DD51 /* NSDate+ZXDate.m */,
+			);
+			path = ZXDate;
+			sourceTree = "<group>";
 		};
 		431A8C0115F71C830004B1CA /* ZXSoundEngine */ = {
 			isa = PBXGroup;
@@ -474,6 +487,7 @@
 				43927BD115FF0B5F0087F249 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				434145EA1643631500CA5861 /* ZXDebug.m in Sources */,
 				435B28341666F96F00133A3A /* ZXTableView.m in Sources */,
+				43151E23171D1F5200F3DD51 /* NSDate+ZXDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

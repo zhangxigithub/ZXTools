@@ -26,6 +26,8 @@
 
 #import "ZXLocationManager.h"
 
+#import "NSDate+ZXDate.h"
+
 //#import "ZXRemoteNotification.h"
 
 @interface ZXTools : NSObject

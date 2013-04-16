@@ -11,17 +11,26 @@
 #import "ViewController.h"
 #import "ZXTabBarController.h"
 
+
+#import "NSDate+ZXDate.h"
+
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //BACK(NSLog(@"r"))
-    
-    //tel(@"15810739215");
 
+    NSDate *date = [NSDate dateWithString:@"2013-04-16 23:14:48" formatter:@"yyyy-MM-dd HH:mm:ss"];    
     
-
+    NSLog(@"%d-%d-%d  %d:%d:%d",[date year],[date month],[date day],[date hour],[date minute],[date second]);
+    
+    NSLog(@"%@",date);
+    NSLog(@"%@",[NSDate dateWithTimeIntervalSince1970:1366092888]);
+    
+    NSLog(@"%@",[NSDate dateWithYear:2013 month:3 day:1]);
+    NSLog(@"%@",[NSDate dateWithYear:2013 month:3 day:1 hour:7 minute:3 second:4]);
+    
+    NSLog(@"%.0f",[date timeIntervalSince1970]);
     
     NSLog(@"%@",[[NSBundle mainBundle] bundleIdentifier]);
    
