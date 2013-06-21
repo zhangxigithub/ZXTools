@@ -10,7 +10,7 @@
 
 #import "ViewController.h"
 #import "ZXTabBarController.h"
-
+#import "NSURL+ZXURL.h"
 
 #import "NSDate+ZXDate.h"
 
@@ -20,6 +20,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
+    
+    
+    NSURL *url = [NSURL URLWithString:@"http://zhangxi.me/?name=cc&birth=6.12"];
+    
+    NSLog(@"%@",[url parameters]);
+    NSLog(@"%@",[url parameterForKey:@"name"]);    //cc
+    NSLog(@"%@",[url parameterForKey:@"sex"]);     //(null)
+    NSLog(@"%@",[url parameterForKey:@"birth"]);   //6.12
+    
+    
+    
+    
+    
+    
     NSDate *date = [NSDate dateWithString:@"2013-04-16 23:14:48" formatter:@"yyyy-MM-dd HH:mm:ss"];    
     
     NSLog(@"%d-%d-%d  %d:%d:%d",[date year],[date month],[date day],[date hour],[date minute],[date second]);

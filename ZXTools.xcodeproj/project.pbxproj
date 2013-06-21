@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3327BBD71774230D004B920C /* NSURL+ZXURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3327BBD61774230D004B920C /* NSURL+ZXURL.m */; };
 		33B890D415DFB0DB00ACEC58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B890D315DFB0DB00ACEC58 /* UIKit.framework */; };
 		33B890D615DFB0DB00ACEC58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B890D515DFB0DB00ACEC58 /* Foundation.framework */; };
 		33B890D815DFB0DB00ACEC58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B890D715DFB0DB00ACEC58 /* CoreGraphics.framework */; };
@@ -54,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3327BBD51774230D004B920C /* NSURL+ZXURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+ZXURL.h"; path = "ZXURL/NSURL+ZXURL.h"; sourceTree = SOURCE_ROOT; };
+		3327BBD61774230D004B920C /* NSURL+ZXURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+ZXURL.m"; path = "ZXURL/NSURL+ZXURL.m"; sourceTree = SOURCE_ROOT; };
 		33B890CF15DFB0DB00ACEC58 /* ZXTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B890D315DFB0DB00ACEC58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		33B890D515DFB0DB00ACEC58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3327BBD4177422E4004B920C /* ZXURL */ = {
+			isa = PBXGroup;
+			children = (
+				3327BBD51774230D004B920C /* NSURL+ZXURL.h */,
+				3327BBD61774230D004B920C /* NSURL+ZXURL.m */,
+			);
+			path = ZXURL;
+			sourceTree = "<group>";
+		};
 		33B890C415DFB0DB00ACEC58 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +203,7 @@
 				33B890E515DFB0DB00ACEC58 /* ViewController.h */,
 				33B890E615DFB0DB00ACEC58 /* ViewController.m */,
 				33B890E815DFB0DB00ACEC58 /* ViewController.xib */,
+				3327BBD4177422E4004B920C /* ZXURL */,
 				43151E1F171D1F1400F3DD51 /* ZXDate */,
 				435B28301666F93600133A3A /* ZXTableView */,
 				434145E71643631500CA5861 /* ZXDebug */,
@@ -488,6 +501,7 @@
 				434145EA1643631500CA5861 /* ZXDebug.m in Sources */,
 				435B28341666F96F00133A3A /* ZXTableView.m in Sources */,
 				43151E23171D1F5200F3DD51 /* NSDate+ZXDate.m in Sources */,
+				3327BBD71774230D004B920C /* NSURL+ZXURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
