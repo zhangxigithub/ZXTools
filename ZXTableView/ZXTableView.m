@@ -1,11 +1,3 @@
-//
-//  ZXTableView.m
-//  ZXTools
-//
-//  Created by 张 玺 on 12-11-29.
-//  Copyright (c) 2012年 张玺. All rights reserved.
-//
-
 #import "ZXTableView.h"
 
 @implementation ZXTableView

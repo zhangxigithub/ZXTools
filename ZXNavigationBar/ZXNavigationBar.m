@@ -1,11 +1,3 @@
-//
-//  ZXNavigationBar.m
-//  ZXTools
-//
-//  Created by 张 玺 on 12-8-29.
-//  Copyright (c) 2012年 张玺. All rights reserved.
-//
-
 #import "ZXNavigationBar.h"
 
 @implementation ZXNavigationBar

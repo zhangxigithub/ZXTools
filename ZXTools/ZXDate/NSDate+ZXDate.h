@@ -1,11 +1,3 @@
-//
-//  NSDate+ZXDate.h
-//  ZXTools
-//
-//  Created by 张 玺 on 13-4-16.
-//  Copyright (c) 2013年 张玺. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @interface NSDate (ZXDate)

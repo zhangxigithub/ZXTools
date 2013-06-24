@@ -1,5 +1,3 @@
-
-
 #import "NSData+Base64.h"
 
 @implementation NSData (Base64)

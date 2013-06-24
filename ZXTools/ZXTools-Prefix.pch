@@ -1,7 +1,3 @@
-//
-// Prefix header for all source files of the 'ZXTools' target in the 'ZXTools' project
-//
-
 #import <Availability.h>
 
 #ifndef __IPHONE_4_0

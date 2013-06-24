@@ -1,11 +1,3 @@
-//
-//  NSString+ZXMD5.m
-//  ZXTools
-//
-//  Created by 张玺 on 12-8-18.
-//  Copyright (c) 2012年 张玺. All rights reserved.
-//
-
 #import "NSString+ZXMD5.h"
 #import <CommonCrypto/CommonDigest.h>
 

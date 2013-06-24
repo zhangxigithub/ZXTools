@@ -1,11 +1,3 @@
-//
-//  ZXSegmentController.m
-//  ZXSegmentController
-//
-//  Created by 张玺 on 12-9-2.
-//  Copyright (c) 2012年 张玺. All rights reserved.
-//
-
 #import "ZXSegmentController.h"
 
 @implementation ZXSegmentController

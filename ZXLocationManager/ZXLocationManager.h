@@ -1,11 +1,3 @@
-//
-//  ZXLocationManager.h
-//  YiQiWan
-//
-//  Created by 张 玺 on 12-2-14.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>

@@ -1,11 +1,3 @@
-//
-//  ZXSoundEngine.m
-//  YiQiWan
-//
-//  Created by 张 玺 on 12-8-7.
-//
-//
-
 #import "ZXSoundEngine.h"
 
 @implementation ZXSoundEngine

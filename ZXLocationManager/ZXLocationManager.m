@@ -1,10 +1,3 @@
-//
-//  ZXLocationManager.m
-//  YiQiWan
-//
-//  Created by 张 玺 on 12-2-14.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
 #pragma GCC diagnostic ignored "-Wdeprecated"
 
 #import "ZXLocationManager.h"

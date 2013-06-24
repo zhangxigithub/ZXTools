@@ -1,11 +1,3 @@
-//
-//  NSString+ZXDES.m
-//  ZXTools
-//
-//  Created by 张玺 on 12-8-18.
-//  Copyright (c) 2012年 张玺. All rights reserved.
-//
-
 #import "NSString+ZXDES.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
@@ -69,13 +61,7 @@
                        (void *)bufferPtr,
                        bufferPtrSize,
                        &movedBytes);
-    //if (ccStatus == kCCSuccess) NSLog(@"SUCCESS");
-    /*else if (ccStatus == kCC ParamError) return @"PARAM ERROR";
-     else if (ccStatus == kCCBufferTooSmall) return @"BUFFER TOO SMALL";
-     else if (ccStatus == kCCMemoryFailure) return @"MEMORY FAILURE";
-     else if (ccStatus == kCCAlignmentError) return @"ALIGNMENT";
-     else if (ccStatus == kCCDecodeError) return @"DECODE ERROR";
-     else if (ccStatus == kCCUnimplemented) return @"UNIMPLEMENTED"; */
+
     
     NSString *result;
     

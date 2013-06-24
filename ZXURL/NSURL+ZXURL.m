@@ -1,11 +1,3 @@
-//
-//  NSURL+ZXURL.m
-//  ZXTools
-//
-//  Created by zhangxi on 13-6-21.
-//  Copyright (c) 2013年 张玺. All rights reserved.
-//
-
 #import "NSURL+ZXURL.h"
 
 @implementation NSURL (ZXURL)

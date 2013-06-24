@@ -1,11 +1,3 @@
-//
-//  ZXRate.m
-//  ZXRate
-//
-//  Created by 张 玺 on 12-8-2.
-//  Copyright (c) 2012年 zhangxi.me. All rights reserved.
-//
-
 #import "ZXRate.h"
 
 @implementation ZXRate
