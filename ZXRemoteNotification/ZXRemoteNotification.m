@@ -59,9 +59,9 @@ didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
 
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    /*
-     收到消息自定义事件
-     */
+    
+    // 收到消息自定义事件
+     
     NSLog(@"%@",userInfo);
     
     if ([[userInfo objectForKey:@"aps"] objectForKey:@"alert"] != nil) {
