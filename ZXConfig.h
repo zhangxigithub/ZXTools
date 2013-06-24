@@ -12,19 +12,6 @@
 #define kURL_Localhost [NSURL URLWithString:@"127.0.0.1"]
 
 
-//color
-
-//point
-
-//frame
-
-
-
-
-
-
-//****************************  项目相关 ↑ ***************************************
-//****************************  工具相关 ↓ ***************************************
 
 
 //App
@@ -93,22 +80,22 @@
 #define openApp(appScheme) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]])
 
 
-//#define POImage(image)
 
-//区分模拟器和真机
+
+
 
 #if TARGET_OS_IPHONE
-//iPhone Device
+
 #endif
 
 #if TARGET_IPHONE_SIMULATOR
-//iPhone Simulator
+
 #endif
 
 
-//ARC
+
 #if __has_feature(objc_arc)
-    //compiling with ARC
+
 #else
-    // compiling without ARC
+
 #endif

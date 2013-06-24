@@ -43,19 +43,19 @@
         }
     }
     
-    //handle left-over data
+
     if (accumulator > 0) outputBytes[outputLength] = (accumulated[0] << 2) | (accumulated[1] >> 4);
     if (accumulator > 1) outputBytes[++outputLength] = (accumulated[1] << 4) | (accumulated[2] >> 2);
     if (accumulator > 2) outputLength++;
     
-    //truncate data to match actual output length
+
     outputData.length = outputLength;
     return outputLength? outputData: nil;
 }
 
 - (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth
 {
-    //ensure wrapWidth is a multiple of 4
+
     wrapWidth = (wrapWidth / 4) * 4;
     
     const char lookup[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -76,7 +76,7 @@
         outputBytes[outputLength++] = lookup[((inputBytes[i + 1] & 0x0F) << 2) | ((inputBytes[i + 2] & 0xC0) >> 6)];
         outputBytes[outputLength++] = lookup[inputBytes[i + 2] & 0x3F];
         
-        //add line break
+
         if (wrapWidth && (outputLength + 2) % (wrapWidth + 2) == 0)
         {
             outputBytes[outputLength++] = '\r';
@@ -84,10 +84,10 @@
         }
     }
     
-    //handle left-over data
+
     if (i == inputLength - 2)
     {
-        // = terminator
+
         outputBytes[outputLength++] = lookup[(inputBytes[i] & 0xFC) >> 2];
         outputBytes[outputLength++] = lookup[((inputBytes[i] & 0x03) << 4) | ((inputBytes[i + 1] & 0xF0) >> 4)];
         outputBytes[outputLength++] = lookup[(inputBytes[i + 1] & 0x0F) << 2];
@@ -95,14 +95,14 @@
     }
     else if (i == inputLength - 1)
     {
-        // == terminator
+
         outputBytes[outputLength++] = lookup[(inputBytes[i] & 0xFC) >> 2];
         outputBytes[outputLength++] = lookup[(inputBytes[i] & 0x03) << 4];
         outputBytes[outputLength++] = '=';
         outputBytes[outputLength++] = '=';
     }
     
-    //truncate data to match actual output length
+
     outputBytes = realloc(outputBytes, outputLength);
     NSString *result = [[NSString alloc] initWithBytesNoCopy:outputBytes length:outputLength encoding:NSASCIIStringEncoding freeWhenDone:YES];
 
