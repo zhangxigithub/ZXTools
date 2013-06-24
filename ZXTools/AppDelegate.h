@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "ZXApplication.h"
 #import "ZXTools.h"
-
+#import "ZXLocationManager.h"
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,ZXLocationManagerDelegate>

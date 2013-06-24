@@ -1,8 +1,10 @@
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
+#import "NSString+Base64.h"
+#import "NSString+ZXMD5.h"
+#import "NSString+ZXDES.h"
+#import "NSString+ZXAES.h"
+#import "NSData+ZXAES.h"
 
 @implementation ViewController
 @synthesize lable;
