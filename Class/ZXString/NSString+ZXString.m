@@ -1,4 +1,4 @@
-#import "NSString+ZXTools.h"
+#import "NSString+ZXString.h"
 
 @implementation NSString (ZXString)
 - (BOOL)isMobileNumber
