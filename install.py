@@ -15,8 +15,8 @@ urllib.urlretrieve(url, "./ZXTools.podspec")
 
 
 dir1 = os.path.expanduser("~/.cocoapods/master/ZXTools/")
-dir = os.path.expanduser("~/.cocoapods/master/ZXTools/1.3/")
-file = os.path.expanduser("~/.cocoapods/master/ZXTools/1.3/ZXTools.podspec")
+dir = os.path.expanduser("~/.cocoapods/master/ZXTools/1.4/")
+file = os.path.expanduser("~/.cocoapods/master/ZXTools/1.4/ZXTools.podspec")
 
 
 
