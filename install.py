@@ -20,7 +20,7 @@ file = os.path.expanduser("~/.cocoapods/master/ZXTools/1.3/ZXTools.podspec")
 
 
 
-os.system('rm -rf ' + dir)
+os.system('rm -rf ' + dir1)
 
 
 os.makedirs(dir)
