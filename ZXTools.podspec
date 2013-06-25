@@ -30,6 +30,8 @@ Pod::Spec.new do |s|
   end
   
     s.subspec 'ZXALAssetsLibrary' do | ZXALAssetsLibrary |
+    
+    ZXALAssetsLibrary.ios.frameworks = 'AssetsLibrary'
     ZXALAssetsLibrary.source_files = 'Class/ZXALAssetsLibrary/*.{h,m}'
   end
   
@@ -65,11 +67,11 @@ Pod::Spec.new do |s|
   
 
 
-  s.ios.frameworks   = 'AssetsLibrary',
-                       'CoreLocation',
-                       'MapKit',
-                       'CoreGraphics',
-                       'AVFoundation'
+#  s.ios.frameworks   = 'AssetsLibrary',
+#                       'CoreLocation',
+#                       'MapKit',
+#                       'CoreGraphics',
+#                       'AVFoundation'
 
 
   s.requires_arc = true
