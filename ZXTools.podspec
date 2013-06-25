@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "zhangxi" => "zhangxi_1989@sina.com" }
 
-  s.source       = { :git => "https://github.com/zhangxigithub/ZXTools.git",:tag=>"v1.3"}
+  s.source       = { :git => "https://github.com/zhangxigithub/ZXTools.git",:tag=>"v1.4"}
 
 
   s.platform     = :ios, '5.0'
