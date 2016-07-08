@@ -1,4 +1,5 @@
 ZXTools
 =======
 
-张玺的个人工具箱，包含众多零散的功能，
+不再使用，以后用 [ZXTools_Swift](https://github.com/zhangxigithub/ZXTools_Swift)
+
